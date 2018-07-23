@@ -12264,7 +12264,7 @@ The percentage of variance of the R2 score that made this a successfull model. i
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-First of all, you never use your whole data as a test set, you have to apply the cross validation in the dataset, and split it in a training and a test set(which will represent the real, and unpredictable data). Why do that? Just to ensure that your model works despite knowing or not the data, so that you decrese the chance, after some tests, of your model become overfited or underfited, and helps to get to the ideal measure of it.
+First of all, you never use your whole data as a training set, you split it in a training and a test set(which will represent the real, and unpredictable data). Why do that? Just to ensure that your model works despite knowing or not the data, so that you decrese the chance, after some tests, of your model become overfited(high score in a training set low score in test set) or underfited(perform  bad in both training and test set), and helps to get to the ideal measure of it.
 The tests become more real and accurate if you shuffle your data and combine them to make different tests.
 That could lead you to a high score or a low score. After see the results of the test set, you can see if you model is good, or suffer from high bias or variance. Changing the hyper-parameters in the next tools you'll use, is a good way to tune your model and get better results.</p>
 <p>Summing up, you need to separete your data to have a good model, because the whole point is to train a model to predict data, and not memorize the ones you have neither "thinks" that everything is valid and learn nothing.</p>
